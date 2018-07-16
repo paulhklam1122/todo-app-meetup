@@ -16,12 +16,8 @@
     "start-windows": "set NODE_ENV=development&& webpack-dev-server --mode development --config webpack.dev.config",
     "build": "NODE_ENV=production webpack --mode production --config web.prod.config.js --colors",
     "build-windows": "set NODE_ENV=production  && webpack --config web.prod.config.js --mode production --colors",
-    "build-staging": "NODE_ENV=staging webpack --mode production --config web.prod.config.js --colors",
-    "lintThis": "eslint src/* --ext .js --fix"
+    "build-staging": "NODE_ENV=staging webpack --mode production --config web.prod.config.js --colors"
   },
-  "pre-commit": [
-    "lintThis"
-  ],
   "devDependencies": {
     "autoprefixer": "^8.4.1",
     "axios": "^0.18.0",
